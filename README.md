@@ -2,7 +2,7 @@
 
 ## 👥 Integrantes
 - João Guilherme (@JGuilhermeAires)
-- Arthur Farias ()
+- Arthur Farias (KEB3CY)
 
 ## 📌 Entregas do Projeto
 
