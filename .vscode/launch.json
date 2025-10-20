@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ConnectionFactory",
+            "request": "launch",
+            "mainClass": "br.com.despesa.factory.ConnectionFactory",
+            "projectName": "DespesasPessoais_4a08370e"
+        },
+        {
+            "type": "java",
+            "name": "MainApp",
+            "request": "launch",
+            "mainClass": "br.com.despesa.principal.MainApp",
+            "projectName": "DespesasPessoais_4a08370e",
+            "vmArgs": "--module-path \"C:/javafx-sdk-21.0.8/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path \"C:/javafx-sdk-21.0.8/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
