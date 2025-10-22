@@ -10,10 +10,13 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/br/com/despesa/view/TelaCadastro.fxml"));
+        // Carrega a tela de login como primeira tela
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/despesa/view/TelaLoginCadastro.fxml"));
+        
         Scene scene = new Scene(root);
-        stage.setTitle("Cadastro de Usuário");
+        stage.setTitle("Login do Sistema de Despesas");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
