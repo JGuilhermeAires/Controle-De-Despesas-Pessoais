@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "br.com.despesa.principal.Main",
+            "projectName": "DespesasPessoais_4a08370e"
+        },
+        {
+            "type": "java",
             "name": "ConnectionFactory",
             "request": "launch",
             "mainClass": "br.com.despesa.factory.ConnectionFactory",

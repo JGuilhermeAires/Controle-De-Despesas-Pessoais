@@ -7,9 +7,9 @@ import br.com.despesa.factory.ConnectionFactory;
 import br.com.despesa.model.Usuario;
 
 public class UsuarioDAO {
-     public void save(Usuario usuario){
+    public boolean save(Usuario usuario) {
         String sql = "INSERT INTO usuario (nome, email, senha) VALUES (?,?,?)";
-         try (Connection conn = ConnectionFactory.createConnectionToSQLServer();
+        try (Connection conn = ConnectionFactory.createConnectionToSQLServer();
              PreparedStatement pstm = conn.prepareStatement(sql)) {
 
             pstm.setString(1, usuario.getNome());
@@ -17,8 +17,10 @@ public class UsuarioDAO {
             pstm.setString(3, usuario.getSenha());
 
             pstm.executeUpdate();
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
     }
 }
